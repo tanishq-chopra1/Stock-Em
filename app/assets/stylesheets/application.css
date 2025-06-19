@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    background-color: #f7f7f7; 
+  }
+  
+  .flash-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    animation: fadeOutMessage 4s forwards;
+  }
+
+  @keyframes fadeOutMessage {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5; 
+    }
+    100% {
+      opacity: 0;
+      display: none; 
+    }
+  }
+  
+  .flash-success {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
+  
+  .flash-alert {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  
+  .flash-notice {
+    background-color: rgba(255, 255, 0, 0.2);
+  }
+  

@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<div class="container-fluid">
+<h2 class="greetings">Howdy, <%= @current_user.first_name %>!</h2>
+
+<div id="user-details" class="user-details-card">
+  <div class="user-detail">
+    <strong>Email:</strong>
+    <span class="detail-value"><%= @current_user.email %></span>
+  </div>
+
+  <div class="user-detail">
+    <strong>First name:</strong>
+    <span class="detail-value"><%= @current_user.first_name %></span>
+  </div>
+
+  <div class="user-detail">
+    <strong>Last name:</strong>
+    <span class="detail-value"><%= @current_user.last_name %></span>
+  </div>
+
+  <div class="user-action-links">
+    <%= link_to "View Items", items_path, class: "btn-view-items" %>
+    <%= link_to "Logout", logout_path, class: "btn-logout" %>
+  </div>
+</div>
+</div>
