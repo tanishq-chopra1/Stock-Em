@@ -7,7 +7,7 @@
 ## 🚀 Live Demo & Code Quality
 
 - **Live App**: [Stock‑Em on Heroku](https://stockem-0caaa6588e50.herokuapp.com/welcome/index)
-- **Code Quality Report**: [Code Climate](https://codeclimate.com/github/LOGiC31/Stock-Em)
+- **Demo Link**: [Youtube Demo](https://www.youtube.com/watch?v=aHZVa2nnDgY)
 
 ---
 
